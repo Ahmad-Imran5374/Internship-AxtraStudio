@@ -1,0 +1,22 @@
+{
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "plugin:react-hooks/recommended",
+      "airbnb",
+      "prettier"
+    ],
+    "plugins": ["react", "react-hooks", "prettier"],
+    "rules": {
+      "react/react-in-jsx-scope": "off",
+      "react/prop-types": "off",
+      "prettier/prettier": ["error", { "endOfLine": "auto" }],
+      "import/no-extraneous-dependencies": ["error", { "devDependencies": true }]
+    },
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    }
+  }
+  
