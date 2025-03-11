@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled, { css } from "styled-components";
 
 const sizes = {
   small: css`
@@ -48,20 +48,14 @@ const variations = {
   `,
 };
 
-
+// ✅ Using default values in destructuring instead of `defaultProps`
 const Button = styled.button`
   border: none;
   border-radius: var(--border-radius-sm);
   box-shadow: var(--shadow-sm);
 
-  ${props=>sizes[props.size]};
-  ${props=>variations[props.variation]};
-
-
+  ${({ size = "medium" }) => sizes[size]}
+  ${({ variation = "primary" }) => variations[variation]}
 `;
 
-Button.defaultProps = {
-  variation: "primary",
-  size: "medium",
-}
 export default Button;
