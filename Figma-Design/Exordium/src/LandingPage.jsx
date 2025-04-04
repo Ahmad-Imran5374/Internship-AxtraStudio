@@ -37,8 +37,8 @@ function LandingPage() {
           <a>Settings</a>
         </div>
         <div className='flex gap-4'>
-          <button onClick={()=>{navigate('/login')}}>Log In</button>
-          <button onClick={()=>{navigate('/signup')}} className='border rounded-2xl px-4 py-2 bg-teal-900 text-stone-100'>Sign Up</button>
+          <button className='cursor-pointer' onClick={()=>{navigate('/login')}}>Log In</button>
+          <button onClick={()=>{navigate('/signup')}} className='border rounded-2xl px-4 py-2 bg-teal-900 text-stone-100 cursor-pointer'>Sign Up</button>
         </div>
       </nav>
 
